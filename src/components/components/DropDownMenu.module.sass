@@ -1,0 +1,25 @@
+.wrapper
+  position: relative
+
+.menu
+  position: absolute
+  transform: translate(-100%, 0)
+  z-index: 2
+  padding: 16px
+  color: var(--on-surface)
+  background-color: var(--surface)
+  border-radius: 16px
+
+.menu > button, .wrapper > button
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  background: none
+  outline: none
+  border: none
+  white-space: nowrap
+  color: var(--on-surface)
+  &:hover
+    cursor: pointer
+    color: var(--faded)

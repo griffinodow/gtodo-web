@@ -1,0 +1,40 @@
+.task
+  display: flex
+  flex-direction: row
+  align-items: center
+  justify-content: space-between
+  > section:nth-child(1)
+    width: 100%
+    display: flex
+    flex-direction: row
+    align-items: center
+    margin-right: 16px
+    > h3
+      border-bottom: 1px solid var(--background)
+    > svg
+      display: inline-block
+      width: 24px
+    > svg:hover
+      cursor: pointer
+  > section
+    display: flex
+    flex-direction: row
+    align-items: center
+    gap: 16px
+    button
+      background: none
+      border: none
+      color: var(--on-background)
+      &:hover
+        color: var(--faded)
+        cursor: pointer
+    form
+      flex: 1
+      input
+        width: 100%
+        font-size: 18px
+        outline: none
+        border: none
+        color: var(--on-background)
+        background-color: var(--background)
+        border-bottom: 1px solid var(--on-background)

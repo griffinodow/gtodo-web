@@ -1,0 +1,52 @@
+// Colours
+body
+  --hot-pink: #FF007A
+  --white: #FFFFFF
+  --charcoal: #3d3d3d
+  --white-shade: #fcfcfc
+  --faded: #C4C4C4
+  --dark-surface: #1e1e1e
+  --black: #131313
+
+// Themes
+@media (prefers-color-scheme: light)
+  body
+    --primary: var(--hot-pink)
+    --on-primary: var(--white)
+    --secondary: var(--white-shade)
+    --on-secondary: var(--black)
+    --tertiary: var(--faded)
+    --on-tertiary: var(--white)
+    --on-surface: var(--black)
+    --surface: var(--white)
+    --background: var(--white)
+    --on-background: var(--charcoal)
+@media (prefers-color-scheme: dark)
+  body
+    --primary: var(--dark-surface)
+    --on-primary: var(--white)
+    --secondary: var(--charcoal)
+    --on-secondary: var(--white)
+    --tertiary: var(--faded)
+    --on-tertiary: var(--white)
+    --on-surface: var(--white)
+    --surface: var(--dark-surface)
+    --background: var(--black)
+    --on-background: var(--white)
+
+.surface
+  color: var(--on-surface)
+  background-color: var(--surface)
+  @media (prefers-color-scheme: light)
+    box-shadow: 0 0px 3px rgba(0,0,0,0.2), 0 1px 2px rgba(0,0,0,0.24)
+  @media (prefers-color-scheme: dark)
+    box-shadow: 0 0px 3px rgba(255,255,255,0.24), 0 1px 2px rgba(255,255,255,0.24)
+
+.spin
+  animation: spin 1s infinite linear
+
+@keyframes spin
+  from
+    transform: scale(1) rotate(0deg)
+  to
+    transform: scale(1) rotate(-360deg)

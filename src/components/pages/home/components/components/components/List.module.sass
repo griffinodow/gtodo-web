@@ -1,0 +1,30 @@
+.list
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+  align-items: center
+  button
+    color: var(--on-surface)
+    background: none
+    border: none
+    outline: none
+    border-bottom: 1px solid var(--surface)
+    &:hover
+      cursor: pointer
+      color: var(--faded)
+  input
+    background: none
+    border: none
+    outline: none
+    color: var(--on-surface)
+    font-size: 18px
+    border-bottom: 1px solid var(--on-surface)
+    width: 100%
+  > section:nth-child(1)
+    width: 100%
+    margin-right: 16px
+  > section:nth-child(2)
+    display: flex
+    flex-direction: row
+    align-items: center
+    gap: 8px
