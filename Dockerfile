@@ -1,6 +1,7 @@
 FROM nginx:alpine
 RUN apk add --update nodejs npm
 RUN mkdir /srv/build
+COPY ./default.conf /etc/nginx/conf.d/default.conf
 WORKDIR /srv/build
 COPY ./src ./src
 COPY package-lock.json .
