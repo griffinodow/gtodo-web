@@ -7,48 +7,30 @@
 
 <br />
 <div align="center">
-  <h3 align="center">G-Todo App</h3>
+  <h3 align="center">G-Todo</h3>
   <p align="center">
-     G-Todo is a todo list app for my portfolio 
-    <br />
-    <a href="https://github.com/griffinodow/gtodo-app"><strong>Explore the docs »</strong></a>
-    <br />
+     Todo list web app for my portfolio 
     <br />
     <a href="https://g-todo.griffindow.com">View Website</a>
     ·
     <a href="https://github.com/griffinodow/gtodo-app/issues">Report Bug</a>
-    ·
-    <a href="https://github.com/griffinodow/gtodo-app/issues">Request Feature</a>
   </p>
 </div>
 
-<!-- TABLE OF CONTENTS -->
-<details>
-  <summary>Table of Contents</summary>
-  <ol>
-    <li>
-      <a href="#about-the-project">About The Project</a>
-      <ul>
-        <li><a href="#built-with">Built With</a></li>
-      </ul>
-    </li>
-    <li>
-      <a href="#getting-started">Getting Started</a>
-      <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#environment">Environment</a></li>
-        <li><a href="#installation">Installation</a></li>
-      </ul>
-    </li>
-    <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#license">License</a></li>
-  </ol>
-</details>
-
 <!-- ABOUT THE PROJECT -->
 ## About The Project
+![Screenshot](./docs/gtodo-screenshot.png)
 
-G-Todo is a todo list app for my portfolio.
+Front-end todo list web app. Create todo lists and todo item entries that can be marked as completed by clicking the checkbox.
+
+### Features
+- Generate random users for easy of use for hiring managers
+- Create, read, update, delete lists
+- Create, read, update, delete tasks inside lists
+
+### Ambition
+
+The goal of this project was to learn React.js to create a web app and Redux.js for state management.
 
 ### Built With
 
@@ -61,30 +43,29 @@ G-Todo is a todo list app for my portfolio.
 <!-- GETTING STARTED -->
 ## Getting Started
 
-This project is meant to run inside a Docker container for easy deployment. The intended experience is available at [g-todo.griffindow.com](https://g-todo.griffindow.com/)
+### View Demo Site
 
-### Prerequisites
+[g-todo.griffindow.com](https://g-todo.griffindow.com/)
 
-Install Docker for your desired platform.
-
-### Installation
-
-Deploy the container with the following command.
+### Develop Locally
 
 ```bash
-docker run -p 80:80 griffinodow/gtodo-app
+# Serve with hot reload at localhost:3000
+npm run dev
+
+# Build for production
+npm run build
 ```
 
-This will allow the app to be served at: http://localhost
+### Deploy Container
 
+Deploy the front-end micro-service container with the following command.
 
-<!-- ROADMAP -->
-## Roadmap
-See the [open issues](https://github.com/griffinodow/gtodo-app/issues) for a full list of proposed features (and known issues).
+```bash
+docker run -p 3000:3000 griffinodow/gstore-web
+```
 
-<!-- LICENSE -->
-## License
-Distributed under the MIT License. See `LICENSE.txt` for more information.
+This will allow the app to be served at: http://localhost:3000
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
