@@ -62,7 +62,7 @@ npm run build
 Deploy the front-end micro-service container with the following command.
 
 ```bash
-docker run -p 3000:3000 griffinodow/gstore-web
+docker run -p 3000:3000 griffinodow/gtodo-app
 ```
 
 This will allow the app to be served at: http://localhost:3000
