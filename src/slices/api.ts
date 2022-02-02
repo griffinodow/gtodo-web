@@ -22,7 +22,7 @@ const graphqlBaseQuery =
     }
 
 export const apiSlice = createApi({
-  baseQuery: graphqlBaseQuery({ baseUrl: 'https://graph.g-todo.griffindow.com/' }),
+  baseQuery: graphqlBaseQuery({ baseUrl: 'https://graph-g-todo.griffindow.com/' }),
   tagTypes: ['Lists'],
   endpoints: () => ({})
 })
